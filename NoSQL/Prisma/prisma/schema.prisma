@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://neondb_owner:XUP2fs1earHJ@ep-floral-tree-a5oi5nsh.us-east-2.aws.neon.tech/neondb?sslmode=require"
+}
+
+
+// this modals are equvalent to creating structure in postgresql
+
+model User {
+    id Int @default(autoincrement())
+    username String @unique
+    password String
+    firstName String?
+    lastName String?
+  }
+
+model Todos {
+    id Int @id @default(autoincrement())
+    title String
+    description String?
+    done Boolean @default(false)
+    userId Int
+  }

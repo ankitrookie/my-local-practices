@@ -1,0 +1,29 @@
+<html>
+	<Script>
+             let timeOut;
+	    function frequentCallDelay() {
+		/** this is called debouncing, it will stop memimize number of req we send to backend **/
+               /*** what this does is, let's say we are calling it for the first time, and with in 100 ml second we call another one, basically the current one will be deleted and new clock start. ***/
+	       clearTimeOut(timeOut);
+               timeOut = setTimeOut(function(){
+                handleClick();
+	       }, 100);   
+	    }
+
+            async function handleClick() {
+	       const a = document.getElementById("firstvalue").value;
+	       const b = document.getElementById("secondvalue").value;
+               const final = document.getElementById("finalValue");
+                /* what ever you want to fetch you can fetch here, like in this case some value will be returent here in this case */
+		const res = await fetch("computation url")_
+		    const data = res.json();
+	            final.innerHTML = data;
+	     }
+	</script>
+   <body>
+	<input id="firstvalue" text="text" placeholder="first"></input> <br></br>
+	<input id="secondvalue" text="text" placeholder="second"></input> <br></br>
+	<button onclick="frequentCallDelay()">calculate sum</button> <br></br>
+	<div id="finalValue"></div>
+   </body>
+</html>

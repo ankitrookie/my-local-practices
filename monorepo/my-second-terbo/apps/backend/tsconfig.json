@@ -1,0 +1,17 @@
+// we are extending all of the base.json from, alrady generated json by turbo repo, and adding else top of it, it same as extending in JAVA
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2015"
+    ],
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "."
+  ]
+}
