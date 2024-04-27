@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc -b && node dist/credit-card-mask.js",
+    "dev": "tsc -b && node dist/array-deff.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
