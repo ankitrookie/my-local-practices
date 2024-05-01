@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc -b && node dist/array-deff.js",
+    "dev": "tsc -b && node dist/square-every-digit.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

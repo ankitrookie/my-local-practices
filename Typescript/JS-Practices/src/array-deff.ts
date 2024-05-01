@@ -1,5 +1,4 @@
 function arrayDiff() {
-	const
 }
 
 const caldiff = arrayDiff()
