@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc -b && node dist/sort-order.js",
+    "dev": "tsc -b && node dist/array-deff.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
