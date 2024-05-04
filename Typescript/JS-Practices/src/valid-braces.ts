@@ -32,10 +32,14 @@ export const validBraces = (braces: string) => {
 
 	// onlu for parenthese solution
 	while (/\(\)/g.test(braces)) {
+		// this while loop only word if the test returns true else it will directly check if braces length 
+		// is === 0 in that case it alrady has "braces present in braces" so it will return false
 		console.log("while loop braces : ", braces)
+		// here if we find any properly closed perenthese ex: "()" it will replace it with empty string,
+		// so the when we check if braces length is === 0 then it becomes true
 		braces = braces.replace(/\(\)/g, '')
 	}
-	console.log("aoutside braces : ", braces)
+	console.log("outside braces : ", braces)
 	return braces.length === 0
 }
 
