@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 
+export type WebSocketDeta = null | WebSocket;
+
 export const useSocket = (setReceivedMessage: (message: string) => void) => {
   const [socket, setSocket] = useState<null | WebSocket>(null);
 

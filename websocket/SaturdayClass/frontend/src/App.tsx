@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { useSocket } from './hooks/useSocket';
+import { useSocket, WebSocketDeta } from './hooks/useSocket';
 
 function App() {
   const [message, setMessage] = useState<string>("");
   const [receivedMessage, setReceivedMessage] = useState<string>('');
-  const socket = useSocket(setReceivedMessage);
+  const socket: WebSocketDeta = useSocket(setReceivedMessage);
 
   return (
     <>
